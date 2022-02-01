@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/eurotrip-react/static/css/main.cd553c86.chunk.css",
+    "main.js": "/eurotrip-react/static/js/main.53460697.chunk.js",
+    "main.js.map": "/eurotrip-react/static/js/main.53460697.chunk.js.map",
+    "runtime~main.js": "/eurotrip-react/static/js/runtime~main.d3153558.js",
+    "runtime~main.js.map": "/eurotrip-react/static/js/runtime~main.d3153558.js.map",
+    "static/css/2.adc0603d.chunk.css": "/eurotrip-react/static/css/2.adc0603d.chunk.css",
+    "static/js/2.8b2cb2dd.chunk.js": "/eurotrip-react/static/js/2.8b2cb2dd.chunk.js",
+    "static/js/2.8b2cb2dd.chunk.js.map": "/eurotrip-react/static/js/2.8b2cb2dd.chunk.js.map",
+    "static/js/3.16e4402c.chunk.js": "/eurotrip-react/static/js/3.16e4402c.chunk.js",
+    "static/js/3.16e4402c.chunk.js.map": "/eurotrip-react/static/js/3.16e4402c.chunk.js.map",
+    "index.html": "/eurotrip-react/index.html",
+    "precache-manifest.23d5471d902f698e145e2b8e3d84c43f.js": "/eurotrip-react/precache-manifest.23d5471d902f698e145e2b8e3d84c43f.js",
+    "service-worker.js": "/eurotrip-react/service-worker.js",
+    "static/css/2.adc0603d.chunk.css.map": "/eurotrip-react/static/css/2.adc0603d.chunk.css.map",
+    "static/css/main.cd553c86.chunk.css.map": "/eurotrip-react/static/css/main.cd553c86.chunk.css.map",
+    "static/media/avatar1.png": "/eurotrip-react/static/media/avatar1.3da11fbd.png",
+    "static/media/avatar2.png": "/eurotrip-react/static/media/avatar2.cd623f12.png",
+    "static/media/avatar4.png": "/eurotrip-react/static/media/avatar4.1aa320f6.png",
+    "static/media/avatar5.png": "/eurotrip-react/static/media/avatar5.87d2c00b.png",
+    "static/media/App.css": "/eurotrip-react/static/media/bg3.adc91222.jpg",
+    "static/media/espanha3.jpg": "/eurotrip-react/static/media/espanha3.d0b0a7b0.jpg",
+    "static/media/franca5.jpg": "/eurotrip-react/static/media/franca5.50b29fcc.jpg",
+    "static/media/holanda6.jpg": "/eurotrip-react/static/media/holanda6.73e51f74.jpg",
+    "static/media/inglaterra2.jpg": "/eurotrip-react/static/media/inglaterra2.5af4cef6.jpg",
+    "static/media/minhafoto2.jpg": "/eurotrip-react/static/media/minhafoto2.fb6c8d20.jpg",
+    "static/media/portugal1.jpg": "/eurotrip-react/static/media/portugal1.eaa6b9a4.jpg",
+    "static/media/roma.jpg": "/eurotrip-react/static/media/roma.a4b2de15.jpg",
+    "static/media/sintra8.jpg": "/eurotrip-react/static/media/sintra8.185b23c8.jpg",
+    "static/media/veneza.jpg": "/eurotrip-react/static/media/veneza.fafa3a67.jpg"
+  }
+}
