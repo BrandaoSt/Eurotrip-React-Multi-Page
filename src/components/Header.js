@@ -8,7 +8,7 @@ const Header = () => {
         <div className='main-info'>
             <h1>Viaje com menos planos e mais liberdade</h1>
             <Typed className='typed-text' strings={["França", "Inglaterra", "Itália", "Holanda"]} typeSpeed={40} backSpeed={60} loop/>
-            <NavLink exact to='/contato' className='btn-promo'>Faça já sua reserva</NavLink>
+            <NavLink to='/contato' className='btn-promo'>Faça já sua reserva</NavLink>
         </div>
       
     </div>

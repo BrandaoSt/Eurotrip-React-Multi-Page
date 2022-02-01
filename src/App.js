@@ -21,7 +21,7 @@ import Avaliacoes from './components/Avaliacoes'
             <Header />
             <div className='pages'>
               <Routes>
-                <Route exact path="/" element={<Inicio />} />
+                <Route path="/" element={<Inicio />} />
                 <Route path="/destinos" element={<Destinos />} />
                 <Route path="/promocoes" element={<Promocoes />} />
                 <Route path="/contato" element={<Contato />} />
