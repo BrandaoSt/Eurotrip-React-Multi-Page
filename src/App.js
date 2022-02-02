@@ -10,31 +10,28 @@ import Destinos from './components/Destinos'
 import Promocoes from './components/Promocoes'
 import Contato from './components/Contato'
 import Avaliacoes from './components/Avaliacoes'
-  /* eslint-disable jsx-a11y/anchor-is-valid */
+import ScrollTop from './components/ScrollTop'
+/* eslint-disable jsx-a11y/anchor-is-valid */
 
-  function App() {
-    return (
-      <div>
-        <header>
-          <Router>
-            <Navbar />
-            <Header />
-            <div className='pages'>
-              <Routes>
-                <Route path="/" element={<Inicio />} />
-                <Route path="/destinos" element={<Destinos />} />
-                <Route path="/promocoes" element={<Promocoes />} />
-                <Route path="/contato" element={<Contato />} />
-              </Routes>
-            </div>
-          </Router>
-        </header>
-        <Avaliacoes/>
-        <footer>
-          <Footer />
-        </footer>
-      </div>
-    )
-  }
+function App() {
+  return (
+    <div>
+      
+      <Router>
+      <ScrollTop/>
+        <Navbar />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Inicio/>} />
+          <Route path="/destinos" element={<Destinos/>} />
+          <Route path="/promocoes" element={<Promocoes/>} />
+          <Route path="/contato" element={<Contato/>} />
+        </Routes>
+      </Router>
+      <Avaliacoes />
+      <Footer />
+    </div>
+  )
+}
 
 export default App;
