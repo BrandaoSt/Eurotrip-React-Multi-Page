@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Eurotrip-React-Multi-Page/precache-manifest.e47d5f177beed64c248dbf2e60345530.js"
+  "/Eurotrip-React-Multi-Page/precache-manifest.0312d835f02068ae8fab549f6e325f23.js"
 );
 
 self.addEventListener('message', (event) => {

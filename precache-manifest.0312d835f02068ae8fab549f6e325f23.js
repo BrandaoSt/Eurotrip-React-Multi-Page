@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "73e2d36f49916cb6ffba7e502619b4d4",
+    "revision": "d04e1b6a114e71b69b8739d973a35b43",
     "url": "/Eurotrip-React-Multi-Page/index.html"
   },
   {
-    "revision": "663271ec7030b1401313",
+    "revision": "b949ccd2985096ecd46c",
     "url": "/Eurotrip-React-Multi-Page/static/css/2.adc0603d.chunk.css"
   },
   {
-    "revision": "e6039e9dae690ea2a1bb",
+    "revision": "b824d5f1fdc3036692d1",
     "url": "/Eurotrip-React-Multi-Page/static/css/main.97eb17b5.chunk.css"
   },
   {
-    "revision": "663271ec7030b1401313",
-    "url": "/Eurotrip-React-Multi-Page/static/js/2.704e2403.chunk.js"
+    "revision": "b949ccd2985096ecd46c",
+    "url": "/Eurotrip-React-Multi-Page/static/js/2.cb35fa58.chunk.js"
   },
   {
     "revision": "c8cdf9a34eee3f2e7963",
     "url": "/Eurotrip-React-Multi-Page/static/js/3.15214453.chunk.js"
   },
   {
-    "revision": "e6039e9dae690ea2a1bb",
-    "url": "/Eurotrip-React-Multi-Page/static/js/main.da3b1e6d.chunk.js"
+    "revision": "b824d5f1fdc3036692d1",
+    "url": "/Eurotrip-React-Multi-Page/static/js/main.0efa7762.chunk.js"
   },
   {
     "revision": "7b326b68274c7a1b68c7",
