@@ -27,6 +27,9 @@ const Navbar = () => {
                         <li className="nav-item">
                             <NavLink to='/contato' className="nav-link" href="/#">Contato</NavLink>
                         </li>
+                        <li className="nav-item">
+                            <NavLink id='navlinklogin' to='/login' className="nav-link" href="/#">Login</NavLink>
+                        </li>
                     </ul>
                 </div>
             </div>

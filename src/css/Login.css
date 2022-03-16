@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2? family= Castoro & family= Roboto+Condensed:wght@300 & display=swap');
+
+/************************* CORES ***********************/
+
+:root {
+  --branco: #fff;
+  --preto: rgba(#255,255,255,0);
+  --cinzaclaro: #f4f4f4;
+  --cinza: #ccd1d9;
+  --cinzaescuro: #666666; 
+  --dark: #033,37,41;
+  --vermelho: #ef4035;
+  --preto-hover: #242221;
+  --pretoopaco: rgba(0,0,0,0.7);
+  --cor-secundaria: #6986bfc7;
+  --cor-secundaria2: #F22E52; 
+  --verde: green;
+
+}
+
+.body {
+    font-family: 'Roboto Condensed' sans-serif !important;
+  }
+
+  
+.login {
+    background: var(--preto-hover);
+    padding: 3rem 0;
+}
+
+.login h1 {
+    color: var(--cor-secundaria2);
+    padding: 1.3rem 0;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.custom-control-label {
+    font-weight: 400;
+    color: #7f7d7d;
+    padding-left: 1rem;
+}
+
+.checkbox {
+    padding: 1rem;
+}
+  
+.forgot-password,
+.forgot-password a {
+    text-align: right;
+    font-size: 13px;
+    padding-top: 10px;
+    color: #7f7d7d;
+    margin: 0;
+}
+  
+.forgot-password a {
+    color: #167bff;
+}
+
+.register,
+.register a {
+    text-align: right;
+    font-size: 13px;
+    padding-top: 10px;
+    color: #7f7d7d;
+    margin: 0;
+}
+  
+.register a {
+    color: #167bff;
+}
+
+.btn-login {
+    border: 1px solid var(--cor-secundaria2);
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+    color: var(--branco);
+    margin: 2rem;
+  }
+  
+  .btn-login:hover {
+    text-decoration: none;
+    background-color: var(--cor-secundaria2);
+    color: var(--branco);
+    transition:  .2s ease-in-out;
+  }
+  
+  .login-btn {
+    margin: 1rem 0 0 0;
+    width: 100%;
+    background: none;
+  }

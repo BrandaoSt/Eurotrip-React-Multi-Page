@@ -37,6 +37,8 @@
 .nav-link {
   text-transform: uppercase;
 }
+
+
 .nav a.nav-link {
   font-size: .9rem;
   letter-spacing: 0.0375;
@@ -72,6 +74,10 @@
 
 .navbar-nav > li > a:hover {
   border-top: 0.1050rem solid var(--cor-secundaria2);
+}
+
+#navlinklogin {
+  color: var(--cor-secundaria2) !important
 }
 
 /***************************     HEADER        *******************************/
@@ -513,6 +519,7 @@
    text-transform: uppercase;
    font-weight: 200;
  }
+
 
  .contato p {
    color: var(--cinzaclaro);

@@ -11,6 +11,7 @@ import Promocoes from './components/Promocoes'
 import Contato from './components/Contato'
 import Avaliacoes from './components/Avaliacoes'
 import ScrollTop from './components/ScrollTop'
+import Login from './components/Login'
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
           <Route path="/destinos" element={<Destinos/>} />
           <Route path="/promocoes" element={<Promocoes/>} />
           <Route path="/contato" element={<Contato/>} />
+          <Route path="/login" element={<Login/>} />
+          
         </Routes>
       </Router>
       <Avaliacoes />
