@@ -23,12 +23,12 @@
   }
 
   
-.login {
+.forgot {
     background: var(--preto-hover);
     padding: 3rem 0;
 }
 
-.login h1 {
+.forgot h1 {
     color: var(--cor-secundaria2);
     padding: 1.3rem 0;
     text-transform: uppercase;
@@ -41,22 +41,7 @@
     justify-content: flex-start;
 }
 
-.custom-checkbox, input.custom-control {
-  justify-content: flex-start;
-}
 
-.forgot-password,
-.forgot-password a {
-    text-align: right;
-    font-size: 13px;
-    padding-top: 10px;
-    color: #7f7d7d;
-    margin: 0;
-}
-  
-.forgot-password a {
-    color: #167bff;
-}
 
 .register,
 .register a {
@@ -71,7 +56,7 @@
     color: #167bff;
 }
 
-.btn-login {
+.btn-forgot {
     border: 1px solid var(--cor-secundaria2);
     text-transform: uppercase;
     border-radius: 0;
@@ -80,20 +65,20 @@
     margin: 2rem;
   }
   
-  .btn-login:hover {
+  .btn-forgot:hover {
     text-decoration: none;
     background-color: var(--cor-secundaria2);
     color: var(--branco);
     transition:  .2s ease-in-out;
   }
   
-  .login-btn {
+  .forgot-btn {
     margin: 1rem 0 0 0;
     width: 100%;
     background: none;
   }
 
-  .login input {
+  .forgot input {
     width: 100%;
     box-sizing: border-box;
     background: none;
@@ -108,11 +93,11 @@
     padding-left: 0 !important;
   }
 
-  .login .container {
+  .forgot .container {
     padding: 4rem 0;
   }
   
-  .login input:focus {
+  .forgot input:focus {
     background: transparent;
     color: var(--cor-secundaria2);
     border-bottom: 0.125rem solid var(--cinzaescuro);

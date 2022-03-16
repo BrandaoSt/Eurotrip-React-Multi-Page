@@ -12,6 +12,8 @@ import Contato from './components/Contato'
 import Avaliacoes from './components/Avaliacoes'
 import ScrollTop from './components/ScrollTop'
 import Login from './components/Login'
+import ForgotPassword from './components/Forgot'
+import Register from './components/Register'
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
 function App() {
@@ -28,7 +30,8 @@ function App() {
           <Route path="/promocoes" element={<Promocoes/>} />
           <Route path="/contato" element={<Contato/>} />
           <Route path="/login" element={<Login/>} />
-          
+          <Route path="/forgot" element={<ForgotPassword/>} />
+          <Route path="/register" element={<Register/>} />
         </Routes>
       </Router>
       <Avaliacoes />
