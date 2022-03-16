@@ -40,10 +40,6 @@
     color: #7f7d7d;
     padding-left: 1rem;
 }
-
-.checkbox {
-    padding: 1rem;
-}
   
 .forgot-password,
 .forgot-password a {
@@ -91,4 +87,47 @@
     margin: 1rem 0 0 0;
     width: 100%;
     background: none;
+  }
+
+  .login input {
+    width: 100%;
+    box-sizing: border-box;
+    background: none;
+    resize: none;
+    border: 0;
+    border-bottom: 0.125rem solid var(--cinzaescuro);
+    border-radius: 0;
+    color: var(--cinza);
+    outline: 0 !important;
+    box-shadow: none !important; 
+    margin-bottom: 1rem;
+    padding-left: 0 !important;
+  }
+
+  .login .container {
+    padding: 4rem 0;
+  }
+  
+  .login input:focus {
+    background: transparent;
+    color: var(--cor-secundaria2);
+    border-bottom: 0.125rem solid var(--cinzaescuro);
+  }
+
+  .line {
+    position: relative;
+    top: -0.8rem;
+    width: 0;
+    height: 0.125rem;
+    background: var(--cor-secundaria2);
+    display: inline-block;
+  }
+  
+  input:focus+.line {
+    width: 100%;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  input.form-control {
+    margin: -0.3rem 0;
   }

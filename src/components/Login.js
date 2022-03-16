@@ -16,13 +16,15 @@ const Login = () => {
                             <div className="form-group">
                                 <label>Email</label>
                                 <input type="email" className="form-control" placeholder="Digite seu email" />
+                                <div className='line'></div>
                             </div>
 
                             <div className="form-group">
                                 <label>Senha</label>
                                 <input type="password" className="form-control" placeholder="Digite sua senha" />
+                                <div className='line'></div>
                             </div>
-                            <div className='checkbox'>
+                            <div className='container'>
                                 <div className="form-group">
                                     <div className="custom-control custom-checkbox">
                                         <input type="checkbox" className="custom-control-input" id="customCheck1" />
