@@ -7,13 +7,13 @@ const Forgot = () => {
 
     const email = useRef()
     
-    function Forgot(event) {
+    function Forgot (event) {
         event.preventDefault()
         Api.post('/auth/forgot', {
-            email: email.current.value
+          email: email.current.value
         }).then((res) => console.log(res))
-            .catch((err) => console.log(err))
-    }
+          .catch((err) => console.log(err))
+      } 
 
     return (
         <div className='forgot'>

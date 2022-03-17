@@ -36,19 +36,21 @@ const Login = () => {
                                 <div className='col-4'>
                                     <div className="form-group">
                                         <label>Email</label>
-                                        <input type="email" className="form-control" placeholder="Digite seu email" ref={email} />
+                                        <input type="email" className="form-control" placeholder="Email" ref={email} />
                                         <div className='line'></div>
                                     </div>
 
                                     <div className="form-group">
                                         <label>Senha</label>
-                                        <input type="password" className="form-control" placeholder="Digite sua senha" ref={senha} />
+                                        <input type="password" className="form-control" placeholder="Senha" ref={senha} />
                                         <div className='line'></div>
                                     </div>
-                                    <div className="form-group">
-                                        <div className="custom-checkbox">
-                                            <input type="checkbox" className='custom-control' />
-                                            <label className="custom-control-label">Lembrar minha senha?</label>
+                                    <div className='align text-left mb-4 text-secondary'>
+                                        <div className="form-group">
+                                            <div className="custom-checkbox">
+                                                <input type="checkbox" className='custom-control' />
+                                                <label className="custom-control-label">Lembrar minha senha?</label>
+                                            </div>
                                         </div>
                                     </div>
                                     <button className='btn-login login-btn' type="submit">Logar</button>

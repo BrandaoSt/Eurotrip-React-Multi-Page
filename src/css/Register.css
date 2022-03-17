@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2? family= Castoro & family= Roboto+Condensed:wght@300 & display=swap');
+
+/************************* CORES ***********************/
+
+:root {
+  --branco: #fff;
+  --preto: rgba(#255,255,255,0);
+  --cinzaclaro: #f4f4f4;
+  --cinza: #ccd1d9;
+  --cinzaescuro: #666666; 
+  --dark: #033,37,41;
+  --vermelho: #ef4035;
+  --preto-hover: #242221;
+  --pretoopaco: rgba(0,0,0,0.7);
+  --cor-secundaria: #6986bfc7;
+  --cor-secundaria2: #F22E52; 
+  --verde: green;
+
+}
+
+.body {
+    font-family: 'Roboto Condensed' sans-serif !important;
+  }
+
+  
+.register {
+    background: var(--preto-hover);
+    padding: 3rem 0;
+}
+
+.register h1 {
+    color: var(--cor-secundaria2);
+    padding: 1.3rem 0;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.custom-control-label {
+    font-weight: 200;
+    color: #7f7d7d;
+    justify-content: flex-start;
+}
+
+
+
+.register,
+.register a {
+    text-align: right;
+    font-size: 13px;
+    padding-top: 10px;
+    color: #7f7d7d;
+    margin: 0;
+}
+  
+.register a {
+    color: #167bff;
+}
+
+.btn-register {
+    border: 1px solid var(--cor-secundaria2);
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+    color: var(--branco);
+    margin: 2rem;
+  }
+  
+  .btn-register:hover {
+    text-decoration: none;
+    background-color: var(--cor-secundaria2);
+    color: var(--branco);
+    transition:  .2s ease-in-out;
+  }
+  
+  .register-btn {
+    margin: 1rem 0 0 0;
+    width: 100%;
+    background: none;
+  }
+
+  .register input {
+    width: 100%;
+    box-sizing: border-box;
+    background: none;
+    resize: none;
+    border: 0;
+    border-bottom: 0.125rem solid var(--cinzaescuro);
+    border-radius: 0;
+    color: var(--cinza);
+    outline: 0;
+    box-shadow: none; 
+    margin-bottom: 1rem;
+    padding-left: 0;
+  }
+
+
+
+.register .container {
+    padding: 4rem 0;
+  }
+  
+  .register input:focus {
+    background: transparent;
+    color: var(--cor-secundaria2);
+    border-bottom: 0.125rem solid var(--cinzaescuro);
+  }
+
+  .line {
+    position: relative;
+    top: -0.8rem;
+    width: 0;
+    height: 0.125rem;
+    background: var(--cor-secundaria2);
+    display: inline-block;
+  }
+  
+  input:focus+.line {
+    width: 100%;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  input.form-control {
+    margin: -0.3rem 0;
+  }
