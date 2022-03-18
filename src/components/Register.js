@@ -53,6 +53,7 @@ function Register (){
     }
 
 return (
+    
     <div className='register'>
         <div className='text-center'>
             <h1>Criar conta</h1>
