@@ -1,123 +1,91 @@
 import React from 'react'
-import { useRef } from 'react'
+import { useEffect, useState, useRef } from "react"
 import Api from '../service/Api'
 import '../css/Register.css'
-const Register = () => {
 
-    const nome = useRef()
-    const email = useRef()
-    const tipo = useRef()
-    const cpfOuCnpj = useRef()
-    const logradouro = useRef()
-    const numero = useRef()
-    const complemento = useRef()
-    const bairro = useRef()
-    const cep = useRef()
-    const telefone1 = useRef()
-    const estadoId = useRef()
-    const cidadeId = useRef()
-    const senha = useRef()
+function Register (){
+    const [estados, setEstados] = useState([])
+    const [cidades, setCidades] = useState([])
+    
 
-    function addUser(event) {
-        event.preventDefault()
-        Api.post('/usuarios', {
-            nome: nome.current.value,
-            email: email.current.value,
-            tipo: tipo.current.value,
-            cpfOuCnpj: cpfOuCnpj.current.value,
-            logradouro: logradouro.current.value,
-            numero: numero.current.value,
-            complemento: complemento.current.value,
-            bairro: bairro.current.value,
-            cep: cep.current.value,
-            telefone1: telefone1.current.value,
-            estadoId: estadoId.current.value,
-            cidadeId: cidadeId.current.value,
-            senha: senha.current.value
-        }).then((res) => console.log(res))
-            .catch((err) => console.log(err))
-    }
 
-    function getEstados(event) {
-        event.preventDefault()
-        Api.get('/estados', {
-            estadosId: estadoId.current.value
-        }).then((res) => console.log(res))
-            .catch((err) => console.log(err))
-    }
+    
+    useEffect(() => {
+        Api.get('/estados').then(response => {
+            setEstados(response.data);
+        })
+    }, []);
 
-    function getCidades(event) {
-        event.preventDefault()
-        Api.get('/estados/2/cidades', {
-            cidadeId: cidadeId.current.value
-        }).then((res) => console.log(res))
-            .catch((err) => console.log(err))
-    }
+    useEffect(() => {
+        Api.get('/estados/1/cidades').then(response => {
+            setCidades(response.data);
+        })
+    }, []);
 
 return (
     <div className='register'>
         <div className='text-center'>
             <h1>Criar conta</h1>
         </div>
-        <form onSubmit={addUser}>
+        <form>
             <div className='align text-center mb-4 text-secondary'>
                 <div className="form-check form-check-inline d-inline-block">
                     <input className="form-check-input-radio" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
-                    <label className="form-check-label" for="inlineRadio1">Pessoa Física</label>
+                    <label className="form-check-label">Pessoa Física</label>
                 </div>
                 <div className="form-check form-check-inline d-inline-block">
                     <input className="form-check-input-radio" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
-                    <label className="form-check-label" for="inlineRadio2">Pessoa Jurídica</label>
+                    <label className="form-check-label">Pessoa Jurídica</label>
                 </div>
             </div>
             <div className='row justify-content-center'>
                 <div className='col-4'>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Nome" ref={email} />
+                        <input type="text" className="form-control" placeholder="Nome" />
                         <div className='line'></div>
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Email" ref={email} />
+                        <input type="text" className="form-control" placeholder="Email"  />
                         <div className='line'></div>
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="CPF ou CNPJ" ref={cpfOuCnpj} />
+                        <input type="text" className="form-control" placeholder="CPF ou CNPJ"  />
                         <div className='line'></div>
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Telefone" ref={telefone1} />
+                        <input type="text" className="form-control" placeholder="Telefone"  />
                         <div className='line'></div>
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Logradouro" ref={logradouro} />
+                        <input type="text" className="form-control" placeholder="Logradouro" />
                         <div className='line'></div>
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Número" ref={numero} />
+                        <input type="text" className="form-control" placeholder="Número"  />
                         <div className='line'></div>
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Complemento" ref={complemento} />
+                        <input type="text" className="form-control" placeholder="Complemento" />
                         <div className='line'></div>
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Bairro" ref={bairro} />
+                        <input type="text" className="form-control" placeholder="Bairro"  />
                         <div className='line'></div>
                     </div>
-                    <select onSubmit={getEstados} className="form-select" aria-label="Estado" ref={estadoId}>
-                        <option selected>Estado</option>
-                        <option value="estadoId">{estadoId.nome}</option>
+                    <select name='estadoId' id='estadoId' className="form-select" aria-label="">
+                        <option value='0'>Selecione o Estado</option>
+                        {estados.map(estado => (<option key={estado.id} value={estado.id}>{estado.nome}</option>))}
                     </select>
-                    <select onSubmit={getCidades} className="form-select" aria-label="Cidade" ref={cidadeId}>
-                        <option selected>Cidade</option>
-                        <option value="cidadeId">{cidadeId.nome}</option>
+                    <select name='cidadeId' id='cidadeId' className="form-select" aria-label="">
+                        <option value='0'>Selecione a cidade</option>
+                        {cidades.map(cidade => (<option key={cidade.id} value={cidade.id}>{cidade.nome}</option>))}
                     </select>
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="CEP" ref={cep} />
+                        <input type="text" className="form-control" placeholder="CEP"  />
                         <div className='line'></div>
                     </div>
                     <div className="form-group">
-                        <input type="password" className="form-control" placeholder="Senha" ref={senha} />
+                        <input type="password" className="form-control" placeholder="Senha"  />
                         <div className='line'></div>
                     </div>
 
@@ -128,5 +96,4 @@ return (
     </div>
 )
 }
-
 export default Register
